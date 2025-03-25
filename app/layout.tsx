@@ -24,11 +24,6 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={inter.className} suppressHydrationWarning>
       <body className="relative flex flex-col min-h-screen">
-        {/* Purple glow */}
-        <div className="absolute left-1/2 top-1/2 h-[50vh] w-[50vh] -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/20 blur-[120px]" />
-
-        {/* Green glow */}
-        <div className="absolute left-1/2 top-1/2 h-[50vh] w-[50vh] -translate-x-1/2 translate-y-0 rounded-full bg-green-400/20 blur-[120px]" />
         <RootProvider>{children}</RootProvider>
       </body>
     </html>
