@@ -56,14 +56,8 @@ const HeroSection = ({
   },
 }: HeroSection) => {
   return (
-    <section className="py-32">
-      {/* Purple glow */}
-      <div className="absolute -left-[40%] top-[5%] h-[60vh] w-[50vw] rounded-full bg-purple-500/30 blur-[120px]" />
-
-      {/* Green glow */}
-      <div className="absolute -right-[40%] bottom-[5%] h-[60vh] w-[50vw] rounded-full bg-green-400/30 blur-[120px]" />
-
-      <div className="container text-center">
+    <section className="relative overflow-hidden py-32">
+      <div className="container relative z-10 text-center">
         <div className="mx-auto flex max-w-screen-lg flex-col gap-6">
           <h1 className="text-3xl font-extrabold lg:text-6xl">{heading}</h1>
           <p className="text-balance text-muted-foreground lg:text-lg">
