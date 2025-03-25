@@ -93,16 +93,9 @@ const HeroSection = ({
             ))}
           </span>
           <div>
-            <div className="flex items-center gap-1">
-              {[...Array(5)].map((_, index) => (
-                <Star
-                  key={index}
-                  className="size-4 fill-yellow-400 text-yellow-400"
-                />
-              ))}
-            </div>
+            <div className="flex items-center gap-1">+5K</div>
             <p className="text-left font-medium text-muted-foreground">
-              from {reviews.count}+ reviews
+              miembros
             </p>
           </div>
         </div>
