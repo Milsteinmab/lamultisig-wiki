@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Badge } from "../ui/badge";
+import Balancer from "react-wrap-balancer";
 
 interface HeroSection {
   heading?: string;
@@ -65,9 +66,12 @@ const HeroSection = ({
 
       <div className="container relative z-10 text-center">
         <div className="mx-auto flex max-w-screen-lg flex-col gap-6">
-          <h1 className="text-3xl font-extrabold lg:text-6xl">{heading}</h1>
+          <h1 className="text-3xl font-extrabold lg:text-6xl">
+            <Balancer>{heading}</Balancer>
+          </h1>
+
           <p className="text-balance text-muted-foreground lg:text-lg">
-            {description}
+            <Balancer>{description}</Balancer>
           </p>
         </div>
 
