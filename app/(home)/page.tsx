@@ -1,37 +1,40 @@
-import Link from "next/link";
+import HeroSection from "@/components/blocks/modern-hero";
 
-const HERO_TEXT = {
-  title: {
-    start: "Tu puerta de entrada al mundo ",
-    highlight: "Web3",
-  },
+const data = {
+  heading: "Tu puerta de entrada a Web3",
   description:
-    "Somos una comunidad enfocada en compartir contenido sobre DeFi, tecnología y más.",
-  cta: "Ir a docs",
+    "La Multisig es un hub de conocimiento Web3 donde puedes encontrar información sobre wallets, blockchains y mucho más.",
+  button: {
+    text: "Ir a la wiki",
+    url: "/docs",
+  },
+  reviews: {
+    count: 200,
+    avatars: [
+      {
+        src: "https://www.shadcnblocks.com/images/block/avatar-1.webp",
+        alt: "Avatar 1",
+      },
+      {
+        src: "https://www.shadcnblocks.com/images/block/avatar-2.webp",
+        alt: "Avatar 2",
+      },
+      {
+        src: "https://www.shadcnblocks.com/images/block/avatar-3.webp",
+        alt: "Avatar 3",
+      },
+      {
+        src: "https://www.shadcnblocks.com/images/block/avatar-4.webp",
+        alt: "Avatar 4",
+      },
+      {
+        src: "https://www.shadcnblocks.com/images/block/avatar-5.webp",
+        alt: "Avatar 5",
+      },
+    ],
+  },
 };
 
-export default function HomePage() {
-  return (
-    <main className="flex flex-1 flex-col items-center justify-center px-4 text-center">
-      <section className="max-w-4xl w-full">
-        <h1 className="mb-6 text-4xl font-bold sm:text-5xl md:text-6xl">
-          {HERO_TEXT.title.start}
-          <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
-            {HERO_TEXT.title.highlight}
-          </span>
-        </h1>
-
-        <p className="mb-8 text-lg text-fd-muted-foreground sm:text-xl">
-          {HERO_TEXT.description}
-        </p>
-
-        <Link
-          href="/docs"
-          className="inline-flex items-center rounded-lg bg-purple-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-purple-700"
-        >
-          {HERO_TEXT.cta}
-        </Link>
-      </section>
-    </main>
-  );
+export default function Hero7Demo() {
+  return <HeroSection {...data} />;
 }
