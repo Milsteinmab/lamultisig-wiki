@@ -14,13 +14,6 @@ interface HeroSection {
     text: string;
     url: string;
   };
-  reviews?: {
-    count: number;
-    avatars: {
-      src: string;
-      alt: string;
-    }[];
-  };
 }
 
 const HeroSection = ({
@@ -29,31 +22,6 @@ const HeroSection = ({
   button = {
     text: "Discover all components",
     url: "https://www.shadcnblocks.com",
-  },
-  reviews = {
-    count: 200,
-    avatars: [
-      {
-        src: "https://www.shadcnblocks.com/images/block/avatar-1.webp",
-        alt: "Avatar 1",
-      },
-      {
-        src: "https://www.shadcnblocks.com/images/block/avatar-2.webp",
-        alt: "Avatar 2",
-      },
-      {
-        src: "https://www.shadcnblocks.com/images/block/avatar-3.webp",
-        alt: "Avatar 3",
-      },
-      {
-        src: "https://www.shadcnblocks.com/images/block/avatar-4.webp",
-        alt: "Avatar 4",
-      },
-      {
-        src: "https://www.shadcnblocks.com/images/block/avatar-5.webp",
-        alt: "Avatar 5",
-      },
-    ],
   },
 }: HeroSection) => {
   return (

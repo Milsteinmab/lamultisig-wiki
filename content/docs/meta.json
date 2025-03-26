@@ -1,3 +1,13 @@
 {
-  "pages": ["...", "glosario"]
+  "pages": [
+    "---La Multisig---",
+    "index",
+    "---Wiki---",
+    "...",
+    "---Info---",
+    "glosario",
+    "[ExternalLink][Telegram](https://t.me/lamultisig)",
+    "[ExternalLink][Twitter](https://x.com/LaMultisig)",
+    "[ExternalLink][Youtube](https://youtube.com/@LaMultisig)"
+  ]
 }
