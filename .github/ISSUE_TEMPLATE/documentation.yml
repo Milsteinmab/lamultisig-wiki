@@ -1,0 +1,57 @@
+name: 📚 Mejora de Documentación
+description: Sugerir mejoras o correcciones en la documentación
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por ayudarnos a mejorar la documentación de La Multisig.
+
+  - type: input
+    id: page
+    attributes:
+      label: Página Afectada
+      description: ¿Qué página necesita ser mejorada?
+      placeholder: /docs/defi/intro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Tipo de Mejora
+      description: ¿Qué tipo de mejora propones?
+      options:
+        - Corrección de error
+        - Actualización de contenido
+        - Clarificación de explicación
+        - Mejora de traducción
+        - Otro
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Contenido Actual
+      description: ¿Qué dice actualmente la documentación?
+      placeholder: El texto actual dice...
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggested
+    attributes:
+      label: Mejora Sugerida
+      description: ¿Qué cambios sugieres?
+      placeholder: Debería decir...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Razón del Cambio
+      description: ¿Por qué este cambio mejoraría la documentación?
+    validations:
+      required: true

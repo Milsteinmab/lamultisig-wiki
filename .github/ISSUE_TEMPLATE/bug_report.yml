@@ -1,0 +1,41 @@
+name: 🐞 Reporte de Bug
+description: Reportar un error o problema en la documentación
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por tomarte el tiempo de reportar un bug.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción del Bug
+      description: Una descripción clara y concisa del bug
+      placeholder: Cuando intento acceder a...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamiento Esperado
+      description: ¿Qué esperabas que sucediera?
+      placeholder: La página debería mostrar...
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: URL o Ruta de la Página
+      description: ¿En qué página encontraste el error?
+      placeholder: /docs/wallets/intro
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Información Adicional
+      description: Cualquier información adicional que pueda ser útil

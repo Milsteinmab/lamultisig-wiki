@@ -1,0 +1,40 @@
+name: 💡 Solicitud de Funcionalidad
+description: Sugerir una idea o mejora para la wiki
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por contribuir con ideas para mejorar La Multisig.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema Relacionado
+      description: ¿Tu sugerencia está relacionada con algún problema? Descríbelo.
+      placeholder: Me frustra cuando...
+    validations:
+      required: false
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solución Propuesta
+      description: Describe la solución que te gustaría ver
+      placeholder: Me gustaría que...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas Consideradas
+      description: ¿Qué otras alternativas has considerado?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Contexto Adicional
+      description: Cualquier otro contexto o capturas de pantalla sobre la solicitud
