@@ -1,7 +1,7 @@
 # La Multisig Wiki 🧠
 
 <p align="center">
-  <img src="public/la_multisig.png" alt="La Multisig Logo" width="200"/>
+  <img src="public/header.png" alt="La Multisig Logo" width="1500"/>
 </p>
 
 ## Sobre La Multisig 🧠
