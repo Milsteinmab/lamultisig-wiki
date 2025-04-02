@@ -1,0 +1,89 @@
+name: 📝 Nueva Documentación
+description: Sugerir un nuevo tema para la documentación
+labels: ["documentation", "new-content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por proponer contenido nuevo para La Multisig. Por favor, proporciona todos los detalles posibles sobre el tema que te gustaría ver documentado.
+
+  - type: input
+    id: title
+    attributes:
+      label: Título Sugerido
+      description: ¿Cuál sería el título de esta nueva documentación?
+      placeholder: Guía de...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Categoría
+      description: ¿En qué sección debería incluirse este contenido?
+      options:
+        - Bitcoin
+        - Bridges
+        - DeFi
+        - Ecosistemas
+        - Privacidad
+        - Seguridad
+        - Stablecoins
+        - Wallets
+        - Nueva Categoría (especificar en la descripción)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción del Contenido
+      description: Describe en detalle qué debería cubrir esta documentación
+      placeholder: Esta documentación debería explicar...
+    validations:
+      required: true
+
+  - type: textarea
+    id: topics
+    attributes:
+      label: Temas Específicos
+      description: Lista los temas específicos que deberían incluirse
+      placeholder: |
+        - Introducción a...
+        - Cómo funciona...
+        - Mejores prácticas para...
+        - Consideraciones de seguridad...
+    validations:
+      required: true
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Recursos Sugeridos
+      description: ¿Tienes enlaces a recursos útiles sobre este tema?
+      placeholder: |
+        - Documentación oficial: https://...
+        - Guías relacionadas: https://...
+        - Herramientas relevantes: https://...
+    validations:
+      required: false
+
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Relevancia
+      description: ¿Por qué es importante incluir este tema en la documentación?
+      placeholder: Este tema es importante porque...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Verificación
+      description: Por favor, confirma lo siguiente
+      options:
+        - label: He verificado que este tema no está cubierto en la documentación existente
+          required: true
+        - label: Entiendo que esta sugerencia será revisada por los mantenedores del proyecto
+          required: true
