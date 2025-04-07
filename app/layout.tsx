@@ -26,7 +26,7 @@ export const metadata = {
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
+    <html lang="es" className={inter.className} suppressHydrationWarning>
       <head>
         <Script
           id="microsoft-clarity"

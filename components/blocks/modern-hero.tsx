@@ -76,7 +76,7 @@ const HeroSection = ({
               ))}
             </div>
 
-            <span className="text-muted-foreground">+5K miembros</span>
+            <span className="text-muted-foreground">+3.6K miembros</span>
           </Badge>
         </div>
       </div>
