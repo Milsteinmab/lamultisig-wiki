@@ -9,7 +9,10 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "La Multisig | Web3 Knowledge Hub",
+  title: {
+    default: "La Multisig | Web3 Knowledge Hub",
+    template: "%s | La Multisig",
+  },
   description:
     "La Multisig es un hub de conocimiento Web3 donde puedes encontrar información sobre wallets, blockchains y mucho más.",
   openGraph: {
