@@ -1,4 +1,4 @@
-import { Github, Star } from "lucide-react";
+import { ArrowRight, Github, Star } from "lucide-react";
 import React from "react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -43,25 +43,26 @@ const HeroSection = ({
           </p>
         </div>
 
-        <Button asChild variant="outline" size="lg">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-muted-foreground"
-            href="https://github.com/La-Multisig/lamultisig-wiki/issues"
-          >
-            <Github />
-            Proponer tópicos
-          </a>
-        </Button>
+        <div className="flex items-center justify-center gap-4 mt-6">
+          <Button asChild variant="outline" size="lg">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-muted-foreground"
+              href="https://github.com/La-Multisig/lamultisig-wiki/issues"
+            >
+              <Github className="mr-2" size={16} />
+              Proponer tópicos
+            </a>
+          </Button>
 
-        <Button
-          asChild
-          size="lg"
-          className="mt-10 ml-4 bg-purple-800 text-white"
-        >
-          <Link href={button.url}>{button.text}</Link>
-        </Button>
+          <Button asChild size="lg" className="bg-purple-800 text-white">
+            <Link href={button.url}>
+              {button.text}
+              <ArrowRight />
+            </Link>
+          </Button>
+        </div>
 
         <div>
           <Badge
