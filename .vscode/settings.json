@@ -1,0 +1,22 @@
+{
+  // MDX file settings
+  "[mdx]": {
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80,
+    "editor.wrappingIndent": "same",
+    "editor.wordBreak": "normal"
+  },
+  
+  // Default settings for all files
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  
+  // Exclude directories from file watching and search
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.next": true
+  },
+}
