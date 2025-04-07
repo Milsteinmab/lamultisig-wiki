@@ -1,12 +1,13 @@
-import { source } from '@/lib/source';
+import { source } from "@/lib/source";
 import {
   DocsPage,
   DocsBody,
   DocsDescription,
   DocsTitle,
-} from 'fumadocs-ui/page';
-import { notFound } from 'next/navigation';
-import defaultMdxComponents, { createRelativeLink } from 'fumadocs-ui/mdx';
+} from "fumadocs-ui/page";
+import { notFound } from "next/navigation";
+import defaultMdxComponents, { createRelativeLink } from "fumadocs-ui/mdx";
+import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
 export default async function Page(props: {
   params: Promise<{ slug?: string[] }>;
@@ -25,6 +26,9 @@ export default async function Page(props: {
         <MDXContent
           components={{
             ...defaultMdxComponents,
+            img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
+              <ImageZoom {...(props as any)} />
+            ),
             // this allows you to link to other pages with relative file paths
             a: createRelativeLink(source, page),
             // you can add other MDX components here
