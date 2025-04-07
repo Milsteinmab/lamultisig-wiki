@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { Github, Star } from "lucide-react";
 import React from "react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -48,8 +48,9 @@ const HeroSection = ({
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-muted-foreground"
-            href="https://forms.gle/TZQn5UM4xs1eiR6G8"
+            href="https://github.com/La-Multisig/lamultisig-wiki/issues"
           >
+            <Github />
             Proponer tópicos
           </a>
         </Button>
