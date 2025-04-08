@@ -1,14 +1,16 @@
 import "./global.css";
 import { RootProvider } from "fumadocs-ui/provider";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import type { ReactNode } from "react";
 import Script from "next/script";
+import type { ReactNode } from "react";
 
 const inter = Inter({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL("https://lamultisig.xyz"),
   title: {
     default: "La Multisig | Web3 Knowledge Hub",
     template: "%s | La Multisig",
