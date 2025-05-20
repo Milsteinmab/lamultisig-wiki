@@ -106,16 +106,34 @@ Una vez aprobado, los administradores harán merge del PR y los cambios se refle
 
 ## 🔍 Opcional: Revisar cambios antes de Pull Request
 
-* Para esto vamos a ejecutar el proyecto en un "Codespaces" (un computadora remota gestionada por Github)
-* Abrir la terminal: presionando CTRL + J
-* Elegir la primera opción de Codespaces y seleccionar el tipo de instancia (cualquiera funciona)
-* Se abrirá una nueva ventana con un ambiente de "Codespaces"
-* En la terminal
-  * Instalar dependencias: correr el comando "pnpm install" en la consola
-  * Ejecutar proyecto: pnpm dev
-  * Abrir la URL del proyecto: click en "Abrir en el navegador"
-* En una nueva pestaña se va a visualizar el sitio para comprobar que los cambios esten bien implementados
-* Hot Reload: A medida que se aplican cambios la interfaz de la URL de preview se actualiza sola
+Para asegurarte de que tus cambios se ven correctamente antes de crear el Pull Request, puedes usar GitHub Codespaces:
+
+### 1. Abrir Codespaces
+- Presiona `CTRL + J` para abrir la terminal
+- Selecciona la primera opción de Codespaces
+- Elige cualquier tipo de instancia (todas funcionan igual)
+- Se abrirá una nueva ventana con el ambiente de desarrollo
+
+### 2. Configurar el Entorno
+En la terminal, ejecuta los siguientes comandos:
+```bash
+# Instalar dependencias
+pnpm install
+
+# Iniciar el servidor de desarrollo
+pnpm dev
+```
+
+### 3. Revisar Cambios
+- Haz clic en "Abrir en el navegador" cuando esté listo
+- Se abrirá una nueva pestaña con el sitio
+- Navega hasta la sección que has modificado
+- Verifica que todo se vea correctamente
+
+### 4. Hot Reload
+- A medida que hagas cambios en el código
+- La interfaz se actualizará automáticamente
+- No necesitas recargar la página manualmente
 
 ![Selección de Codespaces](/content/contribution/13_codespaces.png)
 ![Terminal con comandos](/content/contribution/14_terminal.png)
